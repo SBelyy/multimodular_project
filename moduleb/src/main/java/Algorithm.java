@@ -9,7 +9,7 @@ public class Algorithm {
         if (endIndex >= startIndex) {
             int middleIndex = startIndex + (endIndex - startIndex) / 2;
 
-            logger.info("Search process. " + "Data: Start Index - " + startIndex + ", End index - " +
+            logger.debug("Search process. " + "Data: Start Index - " + startIndex + ", End index - " +
                     endIndex + ", Middle Index - " + middleIndex + ".");
             if (array[middleIndex] == elementToFind) {
                 return middleIndex;

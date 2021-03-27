@@ -10,13 +10,13 @@ public class Runner {
         int[] array = getFilledArray(SIZE_ARRAY);
         int elementToFind = 3;
 
-        logger.info("Start binary search. Initial data: Start index - 0, " +
+        logger.debug("Start binary search. Initial data: Start index - 0, " +
                 "End Index - " + SIZE_ARRAY + ", Element to find - " + elementToFind);
         int numberElement = Algorithm.binarySearch(array, 0, SIZE_ARRAY, elementToFind);
         if (numberElement < 0) {
-            logger.error("Array element not found");
+            logger.debug("Array element not found");
         } else {
-            logger.info("Binary search finish. Element index - " + numberElement);
+            logger.debug("Binary search finish. Element index - " + numberElement);
         }
 
     }
