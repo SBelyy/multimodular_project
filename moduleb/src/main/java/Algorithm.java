@@ -5,6 +5,12 @@ public class Algorithm {
 
     private static final Logger logger = LoggerFactory.getLogger(Algorithm.class);
 
+    public static int binarySearch(int[] array, int elementToFind) {
+        int endIndex = array.length;
+        int startIndex = 0;
+        return binarySearch(array, startIndex, endIndex, elementToFind);
+    }
+
     public static int binarySearch(int[] array, int startIndex, int endIndex, int elementToFind) {
         if (endIndex >= startIndex) {
             int middleIndex = startIndex + (endIndex - startIndex) / 2;
